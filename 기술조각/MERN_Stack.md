@@ -148,11 +148,11 @@ sudo systemctl enable nginx
 ### 5. Create a server block
 
 ```bash
-sudo vim /etc/nginx/sites-available/styel.io
+sudo vim /etc/nginx/sites-available/joujou.io
 ```
 
 ```bash
-# /etc/nginx/sites-available/styel.io
+# /etc/nginx/sites-available/joujou.io
 
 server {
         listen 80;
@@ -173,7 +173,7 @@ location / {
 ```
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/styel.io /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/joujou.io /etc/nginx/sites-enabled/
 
 sudo unlink /etc/nginx/sites-enabled/default
 
@@ -235,11 +235,11 @@ sudo certbot renew --dry-run
 - Install & Update script
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
 #or
 
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 ```
 
 ```bash
@@ -275,9 +275,9 @@ nvm install 6.14.4 # or 10.10.0, 8.9.1, etc
 - Make project directory
 
 ```bash
-mkdir styel_node
+mkdir joujou
 
-cd styel_node
+cd joujou
 ```
 
 - Install Yarn package manager
